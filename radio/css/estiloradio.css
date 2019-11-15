@@ -11,8 +11,8 @@ body {
 }
 
 #radio {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   background-color: #171717;
   margin: auto;
   position: absolute;
@@ -43,7 +43,9 @@ body {
   height: 60%;
   margin: 10px auto 10px;
   position: relative;
-  background-color: #9c8878;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Social_Security_System_%28SSS%29.svg");
+  background-repeat: no-repeat, repeat;
+  background-size: 620px 350px;
   border-radius: 5% 5% 2% 3%/17% 17% 40% 40%;
   border: 4px solid #443d33;
   -webkit-box-shadow: 0px 4px 9px 3px rgba(27, 27, 27, 0.52) inset;
@@ -130,20 +132,21 @@ body {
   right: 0;
   content: '';
   z-index: 2;
-  width: 98%;
-  height: 88%;
+  width: 99%;
+  height: 98%;
   border: 10px solid #443d33;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 5% 5% 10% 10%/60% 50% 90% 100%;
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .volumes {
-  margin-top: 13px;
+margin: 30px;
   position: relative;
   z-index: 10;
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .volumes .circle1 {
+  margin-top: 60px;
   width: 65px;
   height: 65px;
   border: 3px solid #a0997f;
@@ -163,7 +166,7 @@ body {
 #radio .inner-box .bottom-section .inner-wrapper .volumes .circle3 {
   width: 43px;
   height: 43px;
-  margin: 0px;
+  
   border: 3px solid #1f1f1f;
   background: -webkit-gradient(linear, left top, left bottom, from(#25150f), to(#5d5d5d));
   background: linear-gradient(#25150f, #5d5d5d);
@@ -213,11 +216,11 @@ body {
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .pannel-wrapper #blackline1 {
-  top: 10px;
+  top: 30px;
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .pannel-wrapper #blackline2 {
-  top: 43px;
+  top: 73px;
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .pannel-wrapper #blackline2 span {
@@ -228,8 +231,7 @@ body {
   float: left;
   width: 70%;
   position: absolute;
-  top: 10px;
-  margin: 0px auto;
+  margin: 30px auto;
   left: 0;
   right: 0;
 }
@@ -237,6 +239,7 @@ body {
 #radio .inner-box .bottom-section .inner-wrapper .pannel-wrapper .texts .row {
   float: left;
   width: 400%;
+  
 }
 
 #radio .inner-box .bottom-section .inner-wrapper .pannel-wrapper .texts .row p {
@@ -259,11 +262,14 @@ body {
 }
 
 .vl {
+ 
+
   border-left: 4px solid green;
-  height: 42px;
+  height: 45px;
   width: auto;
   position: static;
   left: 0;
+
 }
 
 #myAnimation {

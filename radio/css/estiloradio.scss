@@ -1,0 +1,236 @@
+body{
+	background-color: #000000;
+	background-color: #585858;
+	min-height: 100%;
+	height: 100%;
+}
+
+.main-container{
+	float: left;
+	width: 100%;
+}
+#radio{
+	width: 600px;
+	height: 400px;
+	background-color: rgb(23,23,23);
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	border-radius: 60px;
+	box-shadow: 0px 5px 8px 0px rgba(125, 125, 125, 0.86) inset;
+	.inner-box{
+		width: 100%;
+		height: 100%;
+		background-color: #5d554a;
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		border-radius: 7% 7% 16% 18%/60% 60% 90% 100%;
+		.top-section{
+			width: 90%;
+			height: 60%;
+			margin: 10px auto 10px;
+			position: relative;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Social_Security_System_%28SSS%29.svg");
+            background-repeat: no-repeat, repeat;
+        background-size: 620px 350px;
+
+      border-radius: 5% 5% 2% 3%/17% 17% 40% 40%;
+			border: 4px solid #443d33;
+			box-shadow: 0px 4px 9px 3px rgba(27, 27, 27, 0.52) inset; 
+			.circles{
+				width: 38%;
+				height: 88%;
+				background-color: rgba(51, 51, 51, 0.23);
+				float: left;
+				border-radius: 150px;
+				margin: 11px 28px;
+				border: 2px solid rgba(51, 51, 51, 0.06);
+				box-shadow: inset 0 0 12px 0px rgba(0, 0, 0, 0.3);
+				opacity: 0.2;
+			}
+			.inner-rows-wrapper{
+				width: 78.7%;
+				height: 36%;
+				background-color: transparent;
+				margin-top: 15%;
+				position: relative;
+				z-index: 3;
+				border-right: 55px solid #5d554a;
+				border-left: 55px solid #5d554a;
+				box-shadow: 0px 7px 4px -2px rgba(23, 23, 23, 0.6);
+				.spaces{
+					width: 407px;
+					height: 11px;
+					background-color: transparent;
+					border: 2px solid #5d554a;
+					border-radius: 5px;
+					margin-bottom: -2px;
+					box-shadow: inset 0px 0px 3px 3px rgba(47, 47, 47, 0.81);
+					margin-left: -4px;
+				}
+			}
+			h2{
+				color: #c3b88e;
+				font-family: 'Rochester', cursive;
+				font-size: 18px;
+				letter-spacing: 1px;
+				font-weight: 300;
+				position: absolute;
+				left: 0; bottom: 0; right: 0;
+				margin: 10px auto 0 auto;
+				text-align: center;
+				text-shadow: 3px 3px 4px #444343;
+			}
+		}
+		.bottom-section{
+			position: relative;
+			width: 100%;
+			height: 28%;
+			.inner-wrapper{
+				width: 88%;
+				height: 92%;
+				background-color: #25150f;
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+				border-radius: 5% 5% 10% 10%/60% 50% 90% 100%;
+				&::before{
+					position: absolute;
+					top: -3px;
+					left: -2px;
+					bottom: 0;
+					right: 0;
+					content: '';
+					z-index: 2;
+					width: 98%;
+					height: 88%;
+					border: 10px solid #443d33;
+					background-color: rgba(0, 0, 0, 0);
+					border-radius: 5% 5% 10% 10%/60% 50% 90% 100%;
+				}
+				.volumes{
+					margin-top: 13px;
+					position: relative;
+					z-index: 10;
+					.circle1{
+						width: 65px;
+						height: 65px;
+						border: 3px solid #a0997f;
+						background-color: #25150f;
+						border-radius: 100px;
+					}
+					.circle2{
+						width: 49px;
+						height: 49px;
+						margin: 3px;
+						border: 5px solid #76592c;
+						background-color: #c3b88e;
+						border-radius: 100px;
+					}
+					.circle3{
+						width: 43px;
+						height: 43px;
+						margin: 0px;
+						border: 3px solid #1f1f1f;
+						background: linear-gradient(#25150f, #5d5d5d);
+						border-radius: 100px;
+						box-shadow: 2px 4px 7px -3px #2f2f2f;
+					}
+				}
+				#left-volume{
+					float: left;
+					margin-left: 35px;
+				}
+				#right-volume{
+					float: right;
+					margin-right: 35px;
+				}
+				.pannel-wrapper{
+					background-color: #9f5e2e;
+					width: 73%;
+					height: 71%;
+					margin: 15px auto 0px;
+					border-radius: 20px;
+					position: relative;
+					z-index: 0;
+					.blacklines{
+						width: 70%;
+						height: 4px;
+						background-color: #2b1a1a;
+						position: relative;
+						left: 0; right: 0;
+						margin: 0 auto;
+						border-radius: 100px;
+						span{
+							width: 15px;
+							height: 100%;
+							display: block;
+							background-color: #5D3516;
+							margin: 0px 0px 0px 19px;
+							float: left;
+						}
+					}
+					#blackline1{
+						top: 10px;
+					}
+					#blackline2{
+						top: 43px;
+						span{
+							top: 0;
+						}
+					}
+					.texts{
+						float: left;
+						width: 70%;
+						position: absolute;
+						top: 10px;
+						margin: 0px auto;
+						left: 0;
+						right: 0;
+
+						.row{
+							float: left;
+							width: 400%;
+							p{
+								font-size: 6px;
+								float: left;
+								color: #3a1f0e;
+								margin: 8px 0px 0px 14px;
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.zig-zag {
+    border: none;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+    linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #EC173A;
+}
+
+.vl {
+  border-left: 4px solid green;
+  height: 42px;
+  width:auto;
+  position: static;
+  left:0;
+}
+#myAnimation {
+  top: 300px;
+
+  left: 800px;
+  }
