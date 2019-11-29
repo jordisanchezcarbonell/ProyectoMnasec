@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script type="text/javascript" src="js/liveRadio.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-
-
-</head>
-<body>
-    <div id="map">
-        <div class="img-container">
-            <img src="img/map_no-dots_mptb8a.png" alt="Map">
-        </div>
-        <div id="dots">
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
-            <div class="dot dot-4"></div>
-            <div class="dot dot-5"></div>
-            <div class="dot dot-6"></div>
-            <div id="españa" class="dot dot-7"></div>
-            <div class="dot dot-8"></div>
-            <div class="dot dot-9"></div>
-            <div class="dot dot-10"></div>
-            <div class="dot dot-11"></div>
-            <div class="dot dot-12"></div>
-            <div class="dot dot-13"></div>
-            <div class="dot dot-14"></div>
-            <div class="dot dot-15"></div>
-            <div class="dot dot-16"></div>
-            <div class="dot dot-17"></div>
-            <div class="dot dot-18"></div>
-            <div class="dot dot-19"></div>
-            <div class="dot dot-20"></div>
-            <div class="dot dot-21"></div>
-        </div>
-  </div>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Mapamundi</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
         
-        
-  
-</body>
+        <script type="text/javascript" src="js/radio.js"></script>
+        <script src="../bootstrap/js/popper.min.js"></script>
+        <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="img/back.png" id="img_back" onclick="location.href='../quiosc/quiosc.html';" width="7%">
+
+            <div id="box_title_mapa">
+                <h1 class="text-center p-2" id="title_mapa">Mapamundi</h1>
+            </div>
+
+            <div id="lenguas"> 
+                <img class="bandera" src="./img/lenguas/bandera_catalan.png" alt="">
+                <img class="bandera" src="./img/lenguas/bandera_espanola.png" alt="">
+                <img class="bandera" src="./img/lenguas/bandera_english.png" alt="">
+            </div>
+        </header>
+        <div class="content">
+            <!-- partial:index.partial.html -->
+            <script src="https://www.amcharts.com/lib/4/core.js"></script>
+            <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+            <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+            <div id="chartdiv"></div>
+            <!-- partial -->
+            <script  src="js/script.js"></script>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,15 @@
+footer logo
+ranking
+about
+lenguas
+diseño home page
+cambiar button back
+
+
+Poner logo: mNACTEC, Generalitat, CEPNET
+Hacer el ranking para enseñar algo a Francisco: aunque sean datos, sobrepuestos
+About: sobre nosotros y cepnet
+Poner banderas para cambiar la lengua (aunque no esté hecho)
+Cambiar diseño home page: muy simple --> hover a los buttons, más colores 
+Color --> Utilizar la pg web que nos dio Antonio en DIW Colores
+Cambiar el button back por otro más atractivo
