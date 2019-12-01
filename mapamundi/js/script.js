@@ -27,7 +27,9 @@ polygonSeries.useGeodata = true;
 
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
-polygonTemplate.tooltipText = "{name} {radio}";
+polygonTemplate.size = 100;
+
+polygonTemplate.tooltipText = " [font-size: 100px] {name} {radio} [/]";
 polygonTemplate.fill = am4core.color("#74B266");
 
 // Create hover state and set alternative fill color
@@ -45,13 +47,14 @@ var imageSeries = chart.series.push(new am4maps.MapImageSeries());
 // Create a circle image in image series template so it gets replicated to all new images
 var imageSeriesTemplate = imageSeries.mapImages.template;
 var circle = imageSeriesTemplate.createChild(am4core.Circle);
-circle.radius = 40;
+circle.radius = 30;
 circle.fill = am4core.color("#B27799");
 circle.stroke = am4core.color("#FFFFFF");
 circle.strokeWidth = 2;
 circle.nonScaling = true;
 clickable: true
-circle.tooltipText = "{title}";
+
+circle.tooltipText = " [font-size: 100px] {title}[/]";
 
 //Esto dentro de un for
  var dado=1;
@@ -100,11 +103,12 @@ for(var i =0;i<imageSeries.data.length;i++){
   var audiotest = audios.push(new Audio(imageSeries.data[i].radio));
 }
 // Add zoom control
-chart.zoomControl = new am4maps.ZoomControl();
+//chart.zoomControl = new am4maps.ZoomControl();
 
 // Add and configure small map
 chart.smallMap = new am4maps.SmallMap();
 chart.smallMap.series.push(polygonSeries);
+
 
 function playPause(audio) { 
   audio.play();

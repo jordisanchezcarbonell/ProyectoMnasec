@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost/ProyectoMnasec-master/quiosc/quiosc.html",
+            "url": "http://localhost/mNACTEC_Grup3/quiosc/quiosc.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

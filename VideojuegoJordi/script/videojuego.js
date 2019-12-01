@@ -1,5 +1,6 @@
 window.onload = function() {
 //PANTALLA 4096X2160
+
 var str = "Jordi";
 var res = str.substr(0, 4);
 document.getElementById("resultado").innerHTML = "      El resultado es:"+res;
@@ -8,6 +9,7 @@ document.getElementById("resultado").innerHTML = "      El resultado es:"+res;
     'http://statics.ccma.cat/img/logos/logo_catradio.svg',
     'https://cdn.webrad.io/images/logos/emisora-org-es/maxima-fm.png',
     "imagen/Radio.png"
+    
    ];
 var click=1;
 var canvas = {
@@ -24,7 +26,7 @@ var canvas = {
        
         this.footer.setAttribute("id","peu_pagina");
         this.div.setAttribute("id","box_generalitat");
-        this.img.src="/imagen/logo_generalitat_catalunya.png";
+        this.img.src="imagen/logo_generalitat_catalunya.png";
         this.img.setAttribute("id","img_generalitat");
         this.divcep.setAttribute("id","box_cep");
         this.divcep.innerHTML="Centre d'Estudis <br> <strong>Politècnics</strong>";

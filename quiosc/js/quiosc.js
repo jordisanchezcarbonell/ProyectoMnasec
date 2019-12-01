@@ -1,14 +1,12 @@
 window.onload = function() {
     clickAbout();
-  };
+};
 
 
-
-
-function clickAbout(){
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+function clickAbout() {
+    $('#modalAbout').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 
 }
 
