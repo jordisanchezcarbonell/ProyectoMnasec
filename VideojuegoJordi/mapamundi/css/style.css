@@ -1,0 +1,33 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vh;
+  background-color: #28C71D;
+}
+
+#img_back {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0vh 5vh;
+}
+
+#box_title_mapa {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#title_mapa {
+  display: flex;
+  font-size: 8vh;
+  margin-left: -30vh;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 86vh;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>open bootstrap modal  on page load </title>
+  <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="../bootstrap/js/popper.min.js"></script>
+ <!-- <script src="../bootstrap/js/jquery-3.4.1.min.js"></script>-->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!--
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+  <script  src="script/script.js"></script>
+  <script  src="script/videojuego.js"></script>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="box_logo_mNACTEC">
+            <img id="logo_mNACTEC" src="imagen/logo_mNACTEC.png" alt="">
+        </div>
+
+        <div class="box_title_radio">
+            <h1 class="text-right title_museu" >Memory</h1>
+           
+        </div>
+
+    </header>
+
+<!-- partial:index.partial.html -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog  modal-dialog-centered">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Bienvenido a Memory</h4>
+
+      </div>
+      <div class="modal-body">
+        <p>Aqui veras el funcionamiento del Codigo Morse,selecciona la letra que corresponda el morse </p>
+        <p>1- Si el morse corresponde a la palabra se le añadira la letra en la frase</p>
+
+        <img src="imagen/Morse-Code-A--KS1-Black-and-White.png" class=" img-fluid" alt="">
+        <p>2- Cuando las frases completadas aparece este mensaje:</p>
+        <img src="imagen/findejuego.png" class=" img-fluid" alt="">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="container">
+      
+    </div>
+     <!-- fin menu -->
+  <!-- +++++++++++++++ --> 
+    <!-- Espinoza Yupari -->
+     
+     
+     <!-- inicio row -->
+  <!-- +++++++++++++++ -->
+     
+     <header class="row colordeprueba">
+      
+     <!-- inicio col  -->
+  <!-- +++++++++++++++ -->
+     <div class="col-md-8">
+       
+      <div id="canvas" class="col-md-8"></div>
+    
+       
+       
+     <!-- Iniciar carousel -->
+  <!-- +++++++++++++++ --> 
+    <!-- Espinoza Yupari -->
+    
+  
+ 
+      
+  <div class="col">
+    <div class="separacion" data-resultado="Los40" >
+    IMAGEN QUE SELECIONAR:   
+
+    </div>
+
+    <div  class ="imagenQueescoger separacion"  >
+        <img  class="centrarImagen" data-imagen="Los40"  id="borrar" src="https://cdn.webrad.io/images/logos/emisora-org-es/los-40-principales.png">
+        
+        
+  
+  
+      </div>
+      <div id ="resultado" class="fixed title_museu prueba">
+          El resultado es: J_RD_
+        </div> 
+
+    </div>
+
+
+
+
+
+
+</div>
+ 
+     
+     
+     <!-- fin carousel -->
+  <!-- +++++++++++++++ --> 
+    <!-- Espinoza Yupari -->
+       
+       
+       <!-- fin col  -->
+  <!-- +++++++++++++++ -->
+     </div>
+       
+       <!-- inicio col publicidad  -->
+  <!-- +++++++++++++++ -->
+     <div class="col-md-3 margen">
+       
+       <!-- inicio card publicidad  -->
+  <!-- +++++++++++++++ -->
+     
+         <a id ="margen" class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Ayuda
+  </a>
+</header>
+  
+    
+    
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      
+       <img id ="imagenQueescoger" src="imagen/morse.png"  width="520" height="240" class=" img-fluid" alt="">
+
+    </div>
+
+
+    <div id="gameover" class="modal fade" role="dialog">
+      <div class="modal-dialog  modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Fin del juego</h4>
+            
+    
+          </div>
+          <div class="modal-body">
+            <p>Bien echo, pulsa el BOTON de cerrar para volver a la pantalla principal.</p>
+          </div>
+          <div class="modal-footer">
+              <!-- Cambiar la URL para la main-->
+            <button type="button" class="btn btn-danger" data-dismiss="modal"onclick="location.href='../quiosc/quiosc.html';" >Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+
+</html>
